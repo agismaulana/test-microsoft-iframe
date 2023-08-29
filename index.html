@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <!-- <meta http-equiv="X-Frame-Options" content="SAMEORIGIN"> -->
     <!-- <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' sentry.contentvalidation.com sentry.ppe.contentvalidation.com sentry.int.contentvalidation.com https://onedrive.live.com/"> -->
     <!-- <meta http-equiv="Content-Security-Policy" content="frame-src https://documents/"> -->
     <meta charset="UTF-8">
@@ -25,10 +25,13 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            let input = document.getElementsByClassName('input-url')[0].value;
-            let receive = document.getElementById('iframe-receive')
+            let form = document.getElementsByClassName('submitted')[0];
+            form.addEventListener('submit', function() {
+                let input = document.getElementsByClassName('input-url')[0].value;
+                let receive = document.getElementById('iframe-receive')
 
-            receive.setAttribute('src', input)
+                receive.setAttribute('src', input)
+            })
         })
     </script>
 
