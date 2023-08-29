@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <!-- <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' sentry.contentvalidation.com sentry.ppe.contentvalidation.com sentry.int.contentvalidation.com https://onedrive.live.com/"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="frame-src https://documents/"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" class="submitted">
+        <input type="text" class="input-url" placeholder="Input your URLs">
+        <button class="clicked">Send</button>
+    </form>
+
+
+    <iframe src="" frameborder="0" id="iframe-receive"></iframe>
+    <!-- <a href="https://1drv.ms/x/s!AGf_px3BDpEVj45t">Send</a> -->
+    <!-- <iframe src="https://office.com/" sandbox="allow-scripts" frameborder="0" width="1000" height="500"></iframe> -->
+    <!-- https://excel.officeapps.live.com/x/eyJ0eXAiOiJKV1QiLCJub25jZSI6IlR3bW9fOWNjc0d4cEVkcXcyZm1BUmM5anh1NzluVHVjLXVXenZJLXRqRTQiLCJhbGciOiJSUzI1NiIsIng1dCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyIsImtpZCI6Ii1LSTNROW5OUjdiUm9meG1lWm9YcWJIWkdldyJ9.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mOGNkZWYzMS1hMzFlLTRiNGEtOTNlNC01ZjU3MWU5MTI1NWEvIiwiaWF0IjoxNjkyNjA3NDQyLCJuYmYiOjE2OTI2MDc0NDIsImV4cCI6MTY5MjY5NDE0MiwiYWlvIjoiRTJGZ1lBaWNrNTZlS1BlKzdNWDE5c2U5aDN3NEFBPT0iLCJhcHBfZGlzcGxheW5hbWUiOiJQb3N0bWFuIiwiYXBwaWQiOiJmNmIxMTVkOS00NGQ5LTQyNTEtOTdmZi1kNDM2MGI1MzgzMDQiLCJhcHBpZGFjciI6IjEiLCJpZHAiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC9mOGNkZWYzMS1hMzFlLTRiNGEtOTNlNC01ZjU3MWU5MTI1NWEvIiwiaWR0eXAiOiJhcHAiLCJyaCI6IjAuQVNvQU1lX04tQjZqU2t1VDVGOVhIcEVsV2dNQUFBQUFBQUFBd0FBQUFBQUFBQUFCQUFBLiIsInRlbmFudF9yZWdpb25fc2NvcGUiOiJXVyIsInRpZCI6ImY4Y2RlZjMxLWEzMWUtNGI0YS05M2U0LTVmNTcxZTkxMjU1YSIsInV0aSI6IjZWdi0tOC1UdEVDb3dsZ1QwOFJPQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbIjA5OTdhMWQwLTBkMWQtNGFjYi1iNDA4LWQ1Y2E3MzEyMWU5MCJdLCJ4bXNfdGNkdCI6MTMzODMzNjY4NX0.KPlYknCGuF83bLuM9OlvjFG8NV5F9wvWXX5ehQ5nA9IRlWzuA-KIqY8uVA9uD9scivG0JalZrMjQH_XqFivGDFjPSjTlnZQTnPjZw4YxQ85N7TDTJ9GEhr4UgxP5C3e8AHGMawpcDw_KdM0MEVRRJcFOIdXKFBJfqogUWa_6bXgXFIJSbfiyRX7f1lCZz0oqVMRi0KJRr1fa-divzRKNs-K09Br8jAnFMw6mYswKIuB_P1VQIdcaHI9Q6d2cHPNC3bQ23cJQU4Wggn_EsRwRB1CMahFD9UB4dc2naQQHp_wA9lm1U3I1HH6LnSlIkxebbu_0mKGAT9eTNkFZp8cIUg/live.com/https://1drv.ms/x/s!AGf_px3BDpEVj45t -->
+    <!-- <iframe src="https://1drv.ms/x/s!AGf_px3BDpEVj45t?embedded=true" width="1000" height="500"></iframe> -->
+    <!-- <iframe src="https://teams.microsoft.com/l/chat/19%3A780c8235-6c69-4c6d-abb3-a41eef0fa901_98cab46d-79ca-43e3-afc6-9068b05391aa%40unq.gbl.spaces/0?tenantId=ef05516d-1c43-414d-98c1-a5e469d028b2" width="1000" height="500"></iframe> -->
+    <!-- <iframe src="https://onedrive.live.com/redir?resid=15910EC11DA7FF67!247661&ithint=file%2cxlsx" width="1000" height="500"></iframe> -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let input = document.getElementsByClassName('input-url')[0].value;
+            let receive = document.getElementById('iframe-receive')
+
+            receive.setAttribute('src', input)
+        })
+    </script>
+
+</body>
+</html>
